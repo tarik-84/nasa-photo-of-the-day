@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Date = props => {
+const Date = () => {
 
 const [date, setDate] = useState();
 

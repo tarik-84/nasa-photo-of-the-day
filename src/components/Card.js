@@ -1,11 +1,16 @@
 import React from "react";
+import styled from "styled-components";
 
 
+const Headline = styled.h1`
+  color: dodgerblue;
+
+`;
 
 const Card = props => {
     return (
         <div>
-           <h1>{props.title}</h1>
+           <Headline>{props.title}</Headline>
            <div>
              <img src={props.imgUrl} alt={props.title}/>
            </div>

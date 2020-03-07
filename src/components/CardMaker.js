@@ -10,7 +10,7 @@ const CardMaker = props => {
 
    useEffect(() => {
      
-    {axios.get('https://api.nasa.gov/planetary/apod?api_key=SfA59MmLR0aXOGm8kaZhctreNqLecGJtzlWkIz95')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=SfA59MmLR0aXOGm8kaZhctreNqLecGJtzlWkIz95')
     .then(res => {
         setData(res.data)
         console.log(res.data)
@@ -18,11 +18,11 @@ const CardMaker = props => {
     .catch(err => {
         console.log(err)})
 
-   }},[])
+   },[])
 
     return (
        <div>
-         <Card date={data.date} explanation = {data.explanation} title = {data.title} imgUrl = {data.hdurl} />  
+         <Card date={data.date} explanation={data.explanation} title={data.title} imgUrl={data.hdurl} />  
        </div>
    );
 };
